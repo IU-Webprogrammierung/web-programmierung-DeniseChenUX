@@ -6,28 +6,46 @@
     <meta name="keywords" content="Denise Chen, Lebenslauf, Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denise Chen</title>
+    <link rel="icon" type="image/x-icon" href="Dateien/Favicon.png">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">
-                    <img src="Logo.svg" alt="DC Logo" style="width:42px;height:42px;">
+                    <img src="Dateien/Logo.svg" alt="DC Logo" style="width:42px;height:42px;">
                     </a></li>
                 <li><a href="cv.html">Lebenslauf</a></li>
                 <li><a href="projects.html">Projekte</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
+        <!-- Sprachumschalter, Funktion muss noch implementiert werden -->
+        <div class="language-switch">
+            <label for="language-select">Choose Language: </label>
+            <select id="language-select">
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </div>
     </header>
+
     <main>
+        <img src="Dateien/DC1.jpg" alt="Denise Chen" style="float:right;width:200px">>
         <h1>Hallo, mein Name ist</h1>
-        <img src="Name_black.svg" alt="Denise Chen" width="500" height="100">
+        <img src="Dateien/Name_black.svg" alt="Denise Chen" width="500" height="100">
+        <br>
+        <!-- sollen wie ein Buttons aussehen -->
+        <a href="2. Lebenslauf" class="button">Lebenslauf</a>
+        <a href="3.Projekte" class="button">Projekte</a>
+        <a href="4. Kontakt" class="button">Kontakt</a>
     </main>  
 </body>
+
 <footer>
     <p>© 2025 Denise Chen</p>
-    <p>chendenise1996@yahoo.de</p>
+    <!-- soll wie ein Button aussehen -->
+    <a href="mailto:chendenise1996@yahoo.de">Send email</a>
     <!-- Verlinkung LinkdIn einfügen mit Logo oder Button? -->
     <p>Besuchen Sie mich gern auf LinkedIn!</p>
     <!-- Verlinkung Datenschutz, Cookies, Impressum zuzufügen -->
