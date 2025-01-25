@@ -1,0 +1,62 @@
+body {
+    /* Hintergrundbild */
+    background-image: url("Background.jpg");
+    background-color: #030303;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    /* Navigation*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            float: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+         }
+         li {
+            float: left;
+            border-right: 1px solid #bbb;
+            line-height: 100px;
+          }
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          /* Change the link color on hover */
+          li a:hover {
+            background-color: #111;
+          }
+    .language-switch {
+        float: right;
+        position: fixed;
+        top: 0;
+        left: 1500px;
+        width: 100%;
+      }
+    /* Schrift */
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    h1 {
+        text-align: right;
+        font-family: Garamond, "Times New Roman", serif;
+       }
+    /* Abstand */
+    main {
+       margin-top: 300px;
+       margin-bottom: 100px;
+    }
+    /* großes Bild */
+    .big {
+        border-radius: 50%;
+    }
+    /* großer Name */
+    .text {
+        float: right;
+        margin-left: 10px; /* Abstand zum Text */
+    }
+  }
