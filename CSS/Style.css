@@ -75,7 +75,7 @@ body {
        margin-top: 500px;
        margin-bottom: 100px;
     }
-    /* großes Bild */
+    /* Startseite: großes Bild */
     .big {
         border-radius: 50%;
         float:right;
@@ -83,14 +83,14 @@ body {
         position:relative;
         top:-250px;
     }
-    /* großer Name */
-    .text {
+    /* Startseite: großer Name */
+    .text-big {
       width: 500;
       height: 100;
       float: right;
       margin-left: 10px; /* Abstand zum Text */
     }
-    /*große Buttons*/
+    /*Startseite: große Buttons*/
     .button {
       color: white;
       text-align: center;
@@ -106,6 +106,20 @@ body {
       filter: brightness(1.2); /* Erhöht die Helligkeit */
     }
     footer {
-      font-size: 14px
+      font-size: 14px;
+    }
+
+        /* Lebenslauf: kleines Bild */
+        .small {
+          border-radius: 50%;
+          float:left;
+          width:200px;
+          position:relative;
+          top:-300px;
+        }
+        /* Lebenslauf: kleiner Name */
+        .text-small {
+        width: 300px;
+        margin-left: 10px; /* Abstand zum Text */
     }
   }
