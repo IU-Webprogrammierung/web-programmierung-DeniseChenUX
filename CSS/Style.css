@@ -5,6 +5,12 @@ body {
     background-repeat: no-repeat, repeat;
     background-size: cover;
     /* Navigation*/
+    .logo {
+      width:200px;
+    }
+    .logo:hover {
+      filter: brightness(1.2); /* Erhöht die Helligkeit */
+    }
         ul {
             list-style-type: none;
             margin: 0;
@@ -18,7 +24,10 @@ body {
          li {
             float: left;
             border-right: 1px solid #bbb;
-            line-height: 100px;
+            line-height: 50px;
+          }
+          li:first-child {
+            border-right: none;
           }
           li a {
             display: block;
@@ -27,36 +36,76 @@ body {
             padding: 14px 16px;
             text-decoration: none;
           }
-          /* Change the link color on hover */
-          li a:hover {
-            background-color: #111;
+          .nav:hover {
+            backdrop-filter: blur(5px); /* Hintergrund unscharf machen */
           }
     .language-switch {
         float: right;
         position: fixed;
         top: 0;
-        left: 1500px;
+        left: 1650px;
         width: 100%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+      .language-switch label {
+        font-size: 16px;
+        color: white;
+      }
+      .language-switch select { /* Styling des Dropdown-Menüs */
+        font-size: 14px;
+        padding: 5px 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px; /* Abgerundete Ecken */
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: black; /* Dunkler Text */
+        cursor: pointer;
+        transition: all 0.3s ease;
       }
     /* Schrift */
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
     h1 {
         text-align: right;
         font-family: Garamond, "Times New Roman", serif;
+        font-size: 40px
        }
-    /* Abstand */
+    /* Abstand zum Header*/
     main {
-       margin-top: 300px;
+       margin-top: 500px;
        margin-bottom: 100px;
     }
     /* großes Bild */
     .big {
         border-radius: 50%;
+        float:right;
+        width:300px;
+        position:relative;
+        top:-250px;
     }
     /* großer Name */
     .text {
-        float: right;
-        margin-left: 10px; /* Abstand zum Text */
+      width: 500;
+      height: 100;
+      float: right;
+      margin-left: 10px; /* Abstand zum Text */
+    }
+    /*große Buttons*/
+    .button {
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-family: Garamond, "Times New Roman", serif;
+      font-size: 30px;
+      text-decoration: none;
+      padding: 50px 50px 50px 50px;
+      background-color: #721D1D;
+      border-radius: 50%;
+    }
+    .button:hover {
+      filter: brightness(1.2); /* Erhöht die Helligkeit */
+    }
+    footer {
+      font-size: 14px
     }
   }
