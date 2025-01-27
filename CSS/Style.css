@@ -7,6 +7,7 @@ body {
 /* Navigation*/
   .logo {
     width:200px;
+    float: left;
   }
     .logo:hover {
       filter: brightness(1.2); /* Erhöht die Helligkeit */
@@ -67,9 +68,18 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
   h1 {
-      text-align: right;
-      font-family: Garamond, "Times New Roman", serif;
-      font-size: 40px
+    text-align: right;
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 45px
+  }
+  h2 {
+    text-align: left;
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 35px
+  }
+  h3 {
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 25px
   }
 /* Abstand zum Header*/
   main {
@@ -135,6 +145,8 @@ body {
     flex: 1; /* Macht die Elemente gleich groß */
     text-align: center; /* Zentriert den Text innerhalb der Box */
   }
-  
-
+ /* Lebenslauf: Inhalte */ 
+table {
+  width: 100%
+}
 }
