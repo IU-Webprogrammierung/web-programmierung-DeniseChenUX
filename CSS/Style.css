@@ -4,7 +4,7 @@ body {
   background-color: #030303;
   background-repeat: no-repeat, repeat;
   background-size: cover;
-/* Navigation/Menü*/
+/* Navigation/Menü */
   .logo {
     width:200px;
     float: left;
@@ -100,6 +100,8 @@ body {
   }
 /* Startseite: großes Bild */
   .big {
+    display: block;
+    width: 100%;
     border-radius: 50%;
     float:right;
     width:300px;
@@ -141,7 +143,7 @@ body {
   }
   .text-small { /* Lebenslauf: kleiner Name */
     width: 300px;
-    max-width: 80%; /* Skalierung für den zweiten Inhalt */
+    max-width: 80%; 
     height: auto;
   }
   .introduction {
@@ -184,7 +186,8 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   list-style-type: square;
   margin-left: 20%;
   text-align: left;
-  width: 60%
+  width: 60%;
+  display: block;
 }
 .Kenntnisse { /* Lebenslauf: Überschriften (li)*/
   list-style-type: none;
@@ -205,5 +208,19 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   background-color: #2E8072;
 }
 
-
+/* Footer */ 
+footer {
+  padding: 20px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-links {
+  color: white; 
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Abstand zwischen den Links */
+  margin: 0;
+}
 }
