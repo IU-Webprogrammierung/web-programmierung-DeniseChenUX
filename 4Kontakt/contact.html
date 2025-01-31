@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Denise Chen">
+  <meta name="keywords" content="Denise Chen, Lebenslauf, Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denise Chen</title>
+  <link rel="icon" type="image/x-icon" href="/1Startseite/Dateien/Favicon.png">
+  <link rel="stylesheet" href="/CSS/Style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="Navigation">
+        <li class="nav-logo"><a href="/1Startseite/index.html" aria-label="Zur Startseite">
+            <img class="logo" src="/1Startseite/Dateien/Logo.svg" alt="DC Logo">
+          </a></li>
+        <li class="nav"><a href="/2Lebenslauf/cv.html">Lebenslauf</a></li>
+        <li class="nav"><a href="/3Projekte/projects.html">Projekte</a></li>
+        <li class="nav"><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <!-- Sprachumschalter, Funktion muss noch implementiert werden -->
+    <div class="language-switch">
+      <label for="language-select">Choose Language: </label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="CV">
+    <div class="introduction">
+      <div class="Über-mich">
+        <img class="small" src="/2Lebenslauf/DC2.jpg" alt="Denise Chen">
+      </div>
+      <div class="Über-mich">
+        <img class="text-small" src="/1Startseite/Dateien/Name_white.svg" alt="Denise Chen">
+        <br>
+        <p>chendenise1996@yahoo.de</p>
+        <a href="mailto:chendenise1996@yahoo.de">Send e-mail</a>
+      </div>
+    </div>
+    <h1>Kontakt</h1>
+    <section class="contact-form-container">
+        <div class="form-wrapper">
+            <h2>Kontaktieren Sie mich gerne</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Absenden</button>
+                </div>
+            </form>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Denise Chen</p>
+    <!-- soll noch ggf. wie ein Button aussehen -->
+    <a href="mailto:chendenise1996@yahoo.de">Send e-mail</a>
+    <p>Besuchen Sie mich gern auf <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link" target="_blank">LinkedIn</a>!</p> 
+    <p class="footer-links">
+      <a href="#" >Impressum</a> |
+      <a href="#" >Datenschutz</a> |
+      <a href="#" >Cookies</a>
+  </p>
+  </footer>
+</body>
+
+</html>

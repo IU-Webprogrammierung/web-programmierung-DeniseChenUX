@@ -110,29 +110,45 @@ body {
   }
 /* Startseite: großer Name */
   .text-big {
-    width: 500;
-    height: 100;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     float: right;
     margin-left: 10px; /* Abstand zum Text */
   }
-/*Startseite: große Buttons*/
+/*Startseite: große,runde Buttons*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap;
+}
   .button {
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
     color: white;
     text-align: center;
-    display: inline-block;
+    align-items: center;
+    display: flex;
     font-family: Garamond, "Times New Roman", serif;
     font-size: 30px;
     text-decoration: none;
-    padding: 50px 50px 50px 50px;
     background-color: #721D1D;
     border-radius: 50%;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Übergang für Hover-Effekte */
   }
     .button:hover {
       filter: brightness(1.2); /* Erhöht die Helligkeit */
+      transform: scale(1.1);
     }
-  footer {
-    font-size: 14px;
-  }
+    .button:active {
+      background-color: #2E8072;
+      transform: scale(0.95);
+    }
+
 /* Lebenslauf: Abstand zum Header*/
 .CV {
   margin-top: 400px;
@@ -281,8 +297,58 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   background: #2E8072;
 }
 
+/*Kontakt: Formular*/
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.form-wrapper {
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  resize: vertical;
+}
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #721D1D;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #2E8072;
+}
+
 /* Footer */ 
 footer {
+  font-size: 14px;
   padding: 20px 0;
   text-align: center;
   max-width: 1200px;
