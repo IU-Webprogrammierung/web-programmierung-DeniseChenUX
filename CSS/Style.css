@@ -93,8 +93,8 @@ body {
     text-align: left;
     color: white;
   }
-/* Abstand zum Header*/
-  main {
+/* Startseite: Abstand zum Header*/
+  .Starter {
      margin-top: 500px;
       margin-bottom: 100px;
   }
@@ -133,7 +133,11 @@ body {
   footer {
     font-size: 14px;
   }
-
+/* Lebenslauf: Abstand zum Header*/
+.CV {
+  margin-top: 400px;
+   margin-bottom: 100px;
+}
 /* Lebenslauf: introduction (oben) */
   .small { /* Lebenslauf: kleines Bild */
     border-radius: 50%;
@@ -206,6 +210,75 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
 }
 .download-btn:hover {
   background-color: #2E8072;
+}
+
+/* Projekte */
+/* Lebenslauf: Abstand zum Header*/
+.Projekte {
+  margin-top: 200px;
+   margin-bottom: 100px;
+}
+.projects {
+  display: flex;
+  flex-direction: column; /* Cards untereinander anordnen */
+  gap: 30px;
+  padding: 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.card {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  /* Karten gleichmäßig verteilen */
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1920px;
+  margin: auto;
+  backdrop-filter: blur(5px);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Bilder */
+.card img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+/* Inhalt der Card */
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+/* Link-Button */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #721D1D;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+.card a:hover {
+  background: #2E8072;
 }
 
 /* Footer */ 
