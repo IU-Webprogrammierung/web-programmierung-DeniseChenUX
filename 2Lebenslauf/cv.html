@@ -13,11 +13,11 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="Navigation">
+    <nav aria-label="Hauptnavigation">
+      <ul class="navigation">
         <li class="nav-logo">
           <a href="/1Startseite/index.html" aria-label="Gehe zur Startseite">
-              <img class="logo" src="/1Startseite/Dateien/Logo.svg" alt="DC Logo führt zur Startseite" role="img">
+              <img class="logo" src="/1Startseite/Dateien/Logo.svg" alt="DC Logo führt zur Startseite">
               <span class="sr-only">Gehe zur Startseite</span>
           </a>
       </li>
@@ -28,10 +28,10 @@
     </nav>
     <!-- Sprachumschalter, Funktion muss noch implementiert werden -->
     <div class="language-switch">
-      <label for="language-select">Choose Language: </label>
-      <select id="language-select">
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
+      <label for="language-select" id="language-label">Sprache wählen: </label>
+      <select id="language-select" aria-labelledby="language-label">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
       </select>
     </div>
   </header>
@@ -39,7 +39,7 @@
   <main class="CV">
   <div class="introduction">
     <div class="Über-mich">
-      <img class="small" src="/2Lebenslauf/DC2.jpg" alt="Denise Chen">
+      <img class="small" src="/2Lebenslauf/DC2.jpg" alt="Porträt von Denise Chen">
     </div>
     <div class="Über-mich">
       <img class="text-small" src="/1Startseite/Dateien/Name_white.svg" alt="Denise Chen">
@@ -179,21 +179,26 @@
         </li>
       </ul>
     </section>
-    <a href="/2Lebenslauf/Lebenslauf_2025.pdf" download="Lebenslauf_Denise_Chen" class="download-btn">
-      Lebenslauf herunterladen
+    <a href="/2Lebenslauf/Lebenslauf_2025.pdf" download="Lebenslauf_Denise_Chen" class="download-btn"
+      aria-label="Lebenslauf von Denise Chen als PDF herunterladen"> 📄 Lebenslauf herunterladen
     </a> 
   </main>
 
   <footer>
     <p>© 2025 Denise Chen</p>
     <!-- soll noch ggf. wie ein Button aussehen -->
-    <a href="mailto:chendenise1996@yahoo.de">Send e-mail</a>
-    <p>Besuchen Sie mich gern auf <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link" target="_blank">LinkedIn</a>!</p> 
-    <p class="footer-links">
-      <a href="#" >Impressum</a> |
-      <a href="#" >Datenschutz</a> |
-      <a href="#" >Cookies</a>
-  </p>
+    <a href="mailto:chendenise1996@yahoo.de" class="email-button">E-mail senden</a>
+    <p>Besuchen Sie mich gern auf 
+        <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link" target="_blank">LinkedIn
+        </a>!
+    </p>
+    <nav aria-label="Rechtliche Links">
+        <ul class="footer-links">
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </nav>
   </footer>
 </body>
 

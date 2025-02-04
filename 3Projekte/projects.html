@@ -13,11 +13,11 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="Navigation">
+        <nav aria-label="Hauptnavigation">
+            <ul class="navigation">
                 <li class="nav-logo">
                     <a href="/1Startseite/index.html" aria-label="Gehe zur Startseite">
-                        <img class="logo" src="/1Startseite/Dateien/Logo.svg" alt="DC Logo führt zur Startseite" role="img">
+                        <img class="logo" src="/1Startseite/Dateien/Logo.svg" alt="DC Logo führt zur Startseite">
                         <span class="sr-only">Gehe zur Startseite</span>
                     </a>
                 </li>
@@ -28,57 +28,60 @@
         </nav>
         <!-- Sprachumschalter, Funktion muss noch implementiert werden -->
         <div class="language-switch">
-            <label for="language-select">Choose Language: </label>
-            <select id="language-select">
-                <option value="en">English</option>
+            <label for="language-select" id="language-label">Sprache wählen: </label>
+            <select id="language-select" aria-labelledby="language-label">
                 <option value="de">Deutsch</option>
+                <option value="en">English</option>
             </select>
         </div>
     </header>
 
     <main class="Projekte">
-        <h1>Projekte</h1>
+        <h1>Meine Projekte</h1>
         <div class="curved-line"></div>
         <section class="projects">
             <h2>Uni-Projekte</h2>
             <article class="card">
-                <img src="/3Projekte/Dateien/project1.png" alt="Projekt Website Cheer-Team">
+                <img src="/3Projekte/Dateien/project1.png" alt="Prototyo einer Website für ein Cheerleading-Team">
                 <div class="card-content">
                     <h3>User Interface Design</h3>
                     <p>Gestaltung einer Website für ein Cheerleading-Team <br>
                         <i>Lo-Fi-Prototyp</i>
                     </p>
-                    <a href="https://www.figma.com/proto/oiMB2JCvKwhkiuehk4cNVy/UID?page-id=102%3A653&node-id=102-654&p=f&viewport=387%2C289%2C0.44&t=B3UhLmkKkfD5NEh4-1&scaling=min-zoom&content-scaling=fixed" class="project" target="_blank">siehe Desktop Prototyp</a>
+                    <a href="https://www.figma.com/proto/oiMB2JCvKwhkiuehk4cNVy/UID?page-id=102%3A653&node-id=102-654&p=f&viewport=387%2C289%2C0.44&t=B3UhLmkKkfD5NEh4-1&scaling=min-zoom&content-scaling=fixed" 
+                        class="project" target="_blank" aria-label="Siehe Desktop-Prototyp der team-Website auf Figma">siehe Desktop-Prototyp</a>
                 </div>
             </article>
             <article class="card">
-                <img src="/3Projekte/Dateien/project2.png" alt="Projekt Website Urlaubserlebnis">
+                <img src="/3Projekte/Dateien/project2.png" alt="Prototyp einer Website für ein Urlaubserlebnis">
                 <div class="card-content">
                     <h3>Web-Design</h3>
                     <p>Gestaltung einer Website für ein Urlaubserlebnis <br>
                         <i>Hi-Fi-Prototyp</i>
                     </p>
-                    <a href="https://www.figma.com/proto/gsmxWDG6XOOmOXMDUObQ2o/Webdesign?page-id=476%3A439&node-id=476-2085&viewport=526%2C330%2C0.23&t=Ojf9rrYmMl5Yog6K-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=476%3A2085&show-proto-sidebar=1" class="project" target="_blank">siehe mobilen Prototyp</a>
+                    <a href="https://www.figma.com/proto/gsmxWDG6XOOmOXMDUObQ2o/Webdesign?page-id=476%3A439&node-id=476-2085&viewport=526%2C330%2C0.23&t=Ojf9rrYmMl5Yog6K-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=476%3A2085&show-proto-sidebar=1" 
+                        class="project" target="_blank" aria-label="Siehe mobilen Prototyp der Urlaubserlebnis-Website auf Figma">siehe mobilen Prototyp</a>
                 </div>
             </article>
             <article class="card">
-                <img src="/3Projekte/Dateien/project3.png" alt="Projekt App Gardening">
+                <img src="/3Projekte/Dateien/project3.png" alt="Prototyp einer App fürs Urban Gardening">
                 <div class="card-content">
                     <h3>Mobile Design</h3>
                     <p>Gestaltung einer App zum Urban Gardening <br>
                         <i>Mockups</i>
                     </p>
-                    <a href="https://www.figma.com/proto/mdGYgTzvreBzmk2OVMqmiI/MobileDesign?page-id=186%3A1466&node-id=502-5046&viewport=326%2C368%2C0.13&t=O0iMRZypKgFRXnLy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=192%3A959&show-proto-sidebar=1" class="project" target="_blank">siehe App-Prototyp</a>
+                    <a href="https://www.figma.com/proto/mdGYgTzvreBzmk2OVMqmiI/MobileDesign?page-id=186%3A1466&node-id=502-5046&viewport=326%2C368%2C0.13&t=O0iMRZypKgFRXnLy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=192%3A959&show-proto-sidebar=1" 
+                        class="project" target="_blank" aria-label="Siehe mobilen Prototyp der Gardening-App auf Figma">siehe App-Prototyp</a>
                 </div>
             </article>
             <article class="card">
-                <img src="/3Projekte/Dateien/project4.png" alt="Projekt Fehlerdatenbank">
+                <img src="/3Projekte/Dateien/project4.png" alt="Screenshot des Portfolios für eine Fehlerdatenbank">
                 <div class="card-content">
                     <h3>Unternehmenssoftware</h3>
                     <p>Gestaltung einer Fehlerdatenbank<br>
                      <i>Portfolio</i>
                     </p>
-                    <a href="/3Projekte/Dateien/Projekt4.pdf" download="Projekt4" class="download-btn"> Portfolio  herunterladen
+                    <a href="/3Projekte/Dateien/Projekt4.pdf" download="Projekt4" class="download-btn" aria-label="Portfolio zur Fehlerdatenbank als PDF herunterladen">📄 Portfolio  herunterladen
                     </a> 
                 </div>
             </article>
@@ -88,14 +91,18 @@
     <footer>
         <p>© 2025 Denise Chen</p>
         <!-- soll ggf. wie ein Button aussehen -->
-        <a href="mailto:chendenise1996@yahoo.de">Send e-mail</a>
-        <p>Besuchen Sie mich gern auf <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link"
-                target="_blank">LinkedIn</a>!</p>
-        <p class="footer-links">
-            <a href="#">Impressum</a> |
-            <a href="#">Datenschutz</a> |
-            <a href="#">Cookies</a>
+        <a href="mailto:chendenise1996@yahoo.de" class="email-button">E-mail senden</a>
+        <p>Besuchen Sie mich gern auf 
+            <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link" target="_blank">LinkedIn
+            </a>!
         </p>
+        <nav aria-label="Rechtliche Links">
+            <ul class="footer-links">
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 
