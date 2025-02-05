@@ -48,6 +48,7 @@ body {
       border-right: 1px solid #bbb;
       line-height: 50px;
       backdrop-filter: blur(3px);
+      border-radius: 50%;
     }
     .nav:hover {
       font-weight: bold;
@@ -66,12 +67,13 @@ body {
         text-decoration: none;
       }
   .language-switch {
-    float: right;
-    position: fixed;
-    top: 0;
-    left: 1650px;
-    width: 100%;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    z-index: 1000;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
     .language-switch label {
       font-size: 16px;
@@ -80,12 +82,16 @@ body {
     .language-switch select { /* Styling des Dropdown-Menüs */
       font-size: 14px;
       padding: 5px 10px;
-      border: 1px solid #aaa;
-      border-radius: 5px; /* Abgerundete Ecken */
+      border: 1px solid #2E8072;
+      border-radius: 5px;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color: black; /* Dunkler Text */
+      color: white; 
       cursor: pointer;
       transition: all 0.3s ease;
+      background-color: #2E8072;
+      position: relative;
+      z-index: 1000; /* Stellt sicher, dass das Dropdown über anderen Elementen liegt */
+      pointer-events: auto;
     }
 /* Schrift */
   color: white;
@@ -397,17 +403,21 @@ footer {
   font-size: 14px;
   padding: 20px 0;
   text-align: center;
+  width: 100vw;
   align-items: center;
-  max-width: 1200px;
+  justify-content: center;
+  max-width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.footer-links {
+.footer-links { /* Impressum usw. */ 
   list-style: none;
   color: white; 
   text-decoration: none;
   display: flex;
   justify-content: center;
-  gap: 20px; /* Abstand zwischen den Links */
+  gap: 15px; 
   margin: 0 auto;
   align-items: center;
   text-align: center;
