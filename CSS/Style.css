@@ -1,6 +1,6 @@
 body {
 /* Hintergrundbild */
-  background-image: url("/files/background.jpg");
+  background-image: url("../files/background.jpg");
   background-color: #030303;
   background-repeat: no-repeat, repeat;
   background-size: cover;
@@ -125,9 +125,10 @@ body {
   .big {
     display: block;
     width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 50%;
     float:right;
-    width:300px;
     position:relative;
     top:-250px;
   }
@@ -217,7 +218,7 @@ body {
  .curved-line {
   width: 100%;
   height: 50px; /* Höhe der Linie */
-  background: url("/files/underline.svg") no-repeat center;
+  background: url("../files/underline.svg") no-repeat center;
   background-size: contain;
 }
   table {
@@ -264,11 +265,11 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
 }
 
 /* Projekte */
-.Projekte {
+.Projekte { /* main */
   margin-top: 200px;
    margin-bottom: 100px;
 }
-.projects {
+.projects {  /* sections */
   display: flex;
   flex-wrap: wrap;
   /*flex-direction: column;  Cards untereinander anordnen */
@@ -277,7 +278,7 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   max-width: 1920px;
   margin: 0 auto;
 }
-.card {
+.card {  /* article */
   width: 800px;
   height: 600px;
   display: flex;
@@ -314,16 +315,22 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   width: 100%;
   text-align: left;
 }
-/* Link-Button */
-.card a {
-  display: inline-block;
+/* Link-Buttons zu Figma */
+.project { /* card a */
+  display: flex;
   margin-top: 5px;
-  padding: 8px 12px;
   background: #721D1D;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50%;
   transition: background 0.3s ease;
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .card a:hover {
   background: #2E8072;
