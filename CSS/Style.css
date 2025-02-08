@@ -172,6 +172,31 @@ body {
       background-color: #2E8072;
       transform: scale(0.95);
     }
+  /* Startseite: Über mich Box */
+  .about-me-box {
+    background: rgba(46, 128, 114, 0.8); /* Dunkelgrün mit 80% Deckkraft */
+    background: linear-gradient(135deg, rgba(46, 128, 114, 0.8), rgba(114, 29, 29, 0.8)); /* Farbverlauf mit Transparenz */
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 50px; /* Abgerundete Kanten */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: skew(-5deg); /* Schräger Effekt */
+    opacity: 0; /* Unsichtbar */
+    transform: scale(0.9); /* Leicht verkleinert für sanften Effekt */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 40px; /* Verschiebt die Box nach unten */
+    left: 50%;
+}
+  /* Box wird sichtbar, wenn Maus über hover-trigger ist */
+  .text-big:hover + .about-me-box {
+    opacity: 1;
+    transform: scale(1);
+  }
 
 /* Lebenslauf: Abstand zum Header*/
 .CV {
@@ -336,6 +361,30 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   background: #2E8072;
 }
 
+/*Kontakt: LinkedIn-Icon*/
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5; /* LinkedIn-Blau */
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Hover-Effekt */
+.linkedin-button:hover {
+  background-color: #005582; /* Dunkleres Blau */
+  transform: translateY(-2px);
+}
+/* Icon Styling */
+.linkedin-button i {
+  font-size: 22px;
+}
+
 /*Kontakt: Formular*/
 .contact-form-container {
   font-size: 18px;
@@ -417,6 +466,23 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.footer-link { /* LinkedIn */ 
+  align-items: center; /* Icon & Text vertikal ausrichten */
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px; /* Sanft abgerundet */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.footer-link:hover {
+  background-color: #0077b5; /* LinkedIn-Blau */
+  transform: translateY(-2px); /* Leichtes Anheben */
+}
+.footer-link i {
+  margin-right: 8px; /* Abstand zwischen Icon & Text */
+  font-size: 20px; /* Größeres Icon */
 }
 .footer-links { /* Impressum usw. */ 
   list-style: none;
