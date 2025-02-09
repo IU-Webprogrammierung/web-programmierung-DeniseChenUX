@@ -116,6 +116,7 @@ body {
     text-align: left;
     color: white;
   }
+
 /* Startseite: Abstand zum Header*/
   .Starter {
      margin-top: 500px;
@@ -125,7 +126,7 @@ body {
   .big {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 20vw;
     height: auto;
     border-radius: 50%;
     float:right;
@@ -135,7 +136,7 @@ body {
 /* Startseite: großer Name */
   .text-big {
     width: 100%;
-    max-width: 700px;
+    max-width: 40vw;
     height: auto;
     float: right;
     margin-left: 10px; /* Abstand zum Text */
