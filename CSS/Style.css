@@ -199,11 +199,6 @@ body {
     transform: scale(1);
   }
 
-/* Lebenslauf: Abstand zum Header*/
-.CV {
-  margin-top: 400px;
-   margin-bottom: 100px;
-}
 /* Lebenslauf: introduction (oben) */
   .small { /* Lebenslauf: kleines Bild */
     border-radius: 50%;
@@ -232,6 +227,14 @@ body {
     font-size: 25px;
   }
 /* Lebenslauf: Inhalte */ 
+.CV {
+  margin-top: 500px; /* Abstand zum Header*/
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: rgba(3, 3, 3, 0.8); /* 80% Deckkraft (leicht transparent) */
+  border-radius: 50px; /* Abgerundete Ecken */
+  padding: 80px; /* Innenabstand für besseren Look */
+}
 .Lebenslauf { /*h1
     border-bottom: 3px solid #ddd;
     padding-bottom: 5px;
@@ -246,6 +249,7 @@ body {
   height: 50px; /* Höhe der Linie */
   background: url("../files/underline.svg") no-repeat center;
   background-size: contain;
+  filter: invert(1); /* Wandelt Schwarz in Weiß um */
 }
   table {
     color:white;
@@ -458,9 +462,9 @@ textarea {
 /* Footer */ 
 footer {
   font-size: 14px;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: center;
   max-width: 100%;
@@ -478,7 +482,7 @@ footer {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 .footer-link:hover {
-  background-color: #0077b5; /* LinkedIn-Blau */
+  color: #0077b5; /* LinkedIn-Blau */
   transform: translateY(-2px); /* Leichtes Anheben */
 }
 .footer-link i {
