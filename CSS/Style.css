@@ -160,7 +160,7 @@ body {
     font-family: Garamond, "Times New Roman", serif;
     font-size: 30px;
     text-decoration: none;
-    background-color: #721D1D;
+    background: linear-gradient(135deg, #721D1D 50%, #2E8072 100%);
     border-radius: 50%;
     justify-content: center;
     transition: transform 0.3s ease, background-color 0.3s ease; /* Übergang für Hover-Effekte */
@@ -366,6 +366,11 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
   background: #2E8072;
 }
 
+/*Kontakt: Abstand*/
+.Kontakt {
+  margin-top: 500px; /* Abstand zum Header*/
+  margin-right: 80px;
+}
 /*Kontakt: LinkedIn-Icon*/
 .linkedin-button {
   display: inline-flex;
@@ -389,7 +394,6 @@ ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen
 .linkedin-button i {
   font-size: 22px;
 }
-
 /*Kontakt: Formular*/
 .contact-form-container {
   font-size: 18px;
@@ -417,6 +421,7 @@ fieldset {
   margin: 0 auto 20px;
   display: block;
   border: 1px solid #ccc;
+  background-color: rgba(3, 3, 3, 0.8);
 }
 .contact-form {
   display: flex;
