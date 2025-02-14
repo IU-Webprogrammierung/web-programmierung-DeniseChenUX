@@ -268,16 +268,54 @@ body {
     font-weight: bold;
     color: #555;
   }
-ul { /* Lebenslauf: Kenntnisse & Fähigkeiten | später Balken o.Ä. einzufügen! */
+ul { /* Lebenslauf: Kenntnisse & Fähigkeiten */
   list-style-type: square;
   margin-left: 20%;
   text-align: left;
   width: 60%;
   display: block;
 }
-.Kenntnisse { /* Lebenslauf: Überschriften (li)*/
-  list-style-type: none;
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Links ausgerichtet */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
 }
+/* Einzelne Skills */
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Abstand zwischen Text & Balken */
+  margin: 5px 0;
+  width: 100%;
+}
+.skill-name {
+  flex-shrink: 0; /* Verhindert, dass der Text sich dehnt */
+  width: 350px; /* Feste Breite für Einheitlichkeit */
+  text-align: left; /* Links ausrichten */
+}
+/* Die Leiste für die Skills */
+.skill-bar {
+  flex-grow: 1;
+  max-width: 350px;
+  min-width: 250px;
+  width: 60%;
+  height: 12px;
+  background-color: #ddd; /* Hintergrundfarbe der Leiste */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+/* Füllung der Leiste */
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #721D1D, #A83232); /* Farbverlauf für den Fortschritt */
+  border-radius: 6px;
+  transition: width 1s ease-in-out; /* Sanfte Animation */
+}
+
  /* Lebenslauf: Button zum runterladen */
 .download-btn {
   display: inline-block;
