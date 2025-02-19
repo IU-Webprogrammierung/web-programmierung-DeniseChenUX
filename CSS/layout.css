@@ -1,0 +1,189 @@
+/*Struktur & Positionierung*/
+
+body {
+/* Startseite: Abstand zum Header*/
+    .Starter {
+        margin-top: 500px;
+        margin-bottom: 100px;
+    }
+    .big { /* großes Bild */
+        display: block;
+        width: 100%;
+        max-width: 20vw;
+        height: auto;
+        border-radius: 50%;
+        float:right;
+        position:relative;
+        top:-250px;
+    }
+    .text-big { /* großer Name */
+        width: 100%;
+        max-width: 40vw;
+        height: auto;
+        float: right;
+        margin-left: 10px; /* Abstand zum Text */
+    }
+    .about-me-box {  /* Über mich Box */
+        background: rgba(46, 128, 114, 0.8); /* Dunkelgrün mit 80% Deckkraft */
+        background: linear-gradient(135deg, rgba(46, 128, 114, 0.8), rgba(114, 29, 29, 0.8)); /* Farbverlauf mit Transparenz */
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        max-width: 600px;
+        margin: 30px auto;
+        text-align: center;
+        border-radius: 50px; /* Abgerundete Kanten */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        transform: skew(-5deg); /* Schräger Effekt */
+        opacity: 0; /* Unsichtbar */
+        transform: scale(0.9); /* Leicht verkleinert für sanften Effekt */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        position: absolute;
+        top: 40px; /* Verschiebt die Box nach unten */
+        left: 50%;
+    }
+        /* Box wird sichtbar, wenn Maus über hover-trigger ist */
+        .text-big:hover + .about-me-box {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+/* Lebenslauf: */
+    .small { /* kleines Bild */
+        border-radius: 50%;
+        width:200px;
+        max-width: 100%; /* Bild skaliert in den verfügbaren Raum */
+        height: auto;
+    }
+    .text-small { /* kleiner Name */
+        width: 300px;
+        max-width: 80%; 
+        height: auto;
+    }
+    .introduction { /* oberer Teil inkl. Bild */
+        position: absolute; /* Position relativ zum nächsthöheren positionierten Element */
+        top: 200px; /* Vertikale Position */
+        left: 50px; /* Horizontale Position */
+        gap: 20px; 
+        display: flex; 
+        align-items: center; /* Zentriert die Elemente vertikal */
+        flex-wrap: wrap;
+      }
+    .Über-mich { /* Name + Text */
+        flex: 1; /* Macht die Elemente gleich groß */
+        text-align: center; /* Zentriert den Text innerhalb der Box */
+        font-family: Garamond, "Times New Roman", serif;
+        font-size: 25px;
+    }
+    .CV { /* Lebenslauf: Inhalte */ 
+        margin-top: 500px; /* Abstand zum Header*/
+        margin-right: 80px;
+        margin-left: 80px;
+        background-color: rgba(3, 3, 3, 0.8); /* 80% Deckkraft (leicht transparent) */
+        border-radius: 50px; /* Abgerundete Ecken */
+        padding: 80px; /* Innenabstand für besseren Look */
+    }
+    table { /* Lebenslauf: Berufserfahrung + Bildung */ 
+        color:white;
+        width: 80%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-left: 20%;
+      }
+      th, td {
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+       width: 25%;
+        font-weight: bold;
+        color: #555;
+      }
+      ul { /* Lebenslauf: Kenntnisse & Fähigkeiten */
+        list-style-type: square;
+        margin-left: 20%;
+        text-align: left;
+        width: 60%;
+        display: block;
+      }
+
+/* Projekte */
+    .Projekte { /* main */
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    .projects {  /* sections */
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: column;  Cards untereinander anordnen */
+        justify-content: center;
+        padding: 20px;
+        max-width: 1920px;
+        margin: 0 auto;
+    } 
+   
+/*Kontakt: */
+    .Kontakt {
+        margin-top: 500px; /* Abstand zum Header*/
+        margin-right: 80px;
+    }   
+
+/* Footer */ 
+    footer {
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+  .footer-link { /* LinkedIn */ 
+    align-items: center; /* Icon & Text vertikal ausrichten */
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px; /* Sanft abgerundet */
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+    .footer-link:hover {
+        color: #0077b5; /* LinkedIn-Blau */
+        transform: translateY(-2px); /* Leichtes Anheben */
+    }
+    .footer-link i {
+        margin-right: 8px; /* Abstand zwischen Icon & Text */
+        font-size: 20px; /* Größeres Icon */
+    }
+  .footer-links { /* Impressum usw. */ 
+    list-style: none;
+    color: white; 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .email-button{
+    display: inline-block;
+    background-color: #2E8072;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+    .email-button:hover {
+        background-color: #721D1D;
+    }  
+}
