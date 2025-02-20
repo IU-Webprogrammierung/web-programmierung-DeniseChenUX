@@ -14,26 +14,9 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
 
-  h1 {
-    text-align: center;
-    font-family: Garamond, "Times New Roman", serif;
-    font-size: 45px
-  }
   .mein-Name { /*Startseite: h1: Hallo, mein Name ist*/
     text-align: right;
   }
-  h2 {
-    text-align: left;
-    font-family: Garamond, "Times New Roman", serif;
-    font-size: 35px;
-  }
-  h3 {
-    font-family: Garamond, "Times New Roman", serif;
-    font-size: 25px;
-    text-align: left;
-    color: white;
-  }
-
 .Lebenslauf { /*h1
     border-bottom: 3px solid #ddd;
     padding-bottom: 5px;
@@ -43,5 +26,21 @@ body {
     margin-bottom: 20px;
     text-align: center;
  } 
-
+}
+/* Typografie */
+h1 {
+  text-align: center;
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 45px
+}
+h2 {
+  text-align: left;
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 35px;
+}
+h3 {
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 25px;
+  text-align: left;
+  color: white;
 }
