@@ -235,9 +235,20 @@ body {
   }
 
   /* Projekte */
+  .projects {
+    /* gesamte section */
+    display: flex;
+    flex-wrap: wrap;
+    gap: -40px; 
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
   .card {
     /* article */
-    width: 800px;
+    position: relative;
+    width: 600px;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -248,13 +259,16 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 1920px;
-    backdrop-filter: blur(5px);
+    background-color: rgba(3, 3, 3, 0.8);
     border-radius: 50%;
+    margin: -20px; /* Negative Margin für sanfte Überlappung */
+    z-index: 1;
   }
 
   .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15); /* Vergrößert sich leicht */
+    z-index: 10; /* Hebt die Karte über die anderen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   /* Bilder */
