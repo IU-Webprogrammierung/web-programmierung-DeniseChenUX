@@ -1,13 +1,12 @@
 /*Struktur & Positionierung*/
 
-body {
-
     /* Startseite: Abstand zum Header*/
     .Starter {
         margin-top: 500px;
         margin-bottom: 100px;
     }
 
+    /* Startseite: */
     .big {
         /* großes Bild */
         display: block;
@@ -247,4 +246,3 @@ body {
     .email-button:hover {
         background-color: #721D1D;
     }
-}

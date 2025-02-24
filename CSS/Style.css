@@ -13,7 +13,7 @@ body {
   color: white;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
-
+}
   .mein-Name {
     /*Startseite: h1: Hallo, mein Name ist*/
     text-align: right;
@@ -29,7 +29,6 @@ body {
     margin-bottom: 20px;
     text-align: center;
   }
-}
 
 /* Typografie */
 h1 {
