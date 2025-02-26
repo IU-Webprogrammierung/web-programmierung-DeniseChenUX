@@ -22,4 +22,4 @@ Das Ziel ist es, **HTML, CSS und Git für die Versionskontrolle zu nutzen**.
 ✔  optional: CSS
 
 ---
-Studentin: Denise Chen (Matrikelnr. 32210003)
+Studentin: Denise Chen
