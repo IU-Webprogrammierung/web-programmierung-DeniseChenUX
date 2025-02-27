@@ -16,7 +16,8 @@
         border-radius: 50%;
         float: right;
         position: relative;
-        top: -250px;
+        top: -200px;
+        margin: 10px;
     }
 
     .text-big {
@@ -25,35 +26,26 @@
         max-width: 40vw;
         height: auto;
         float: right;
-        margin-left: 10px;
-        /* Abstand zum Text */
     }
 
     .about-me-box {
         /* Über mich Box */
-        background: rgba(46, 128, 114, 0.8);
-        /* Dunkelgrün mit 80% Deckkraft */
-        background: linear-gradient(135deg, rgba(46, 128, 114, 0.8), rgba(114, 29, 29, 0.8));
-        /* Farbverlauf mit Transparenz */
+        background: rgba(46, 128, 114, 0.8); /* Dunkelgrün mit 80% Deckkraft */
+        background: linear-gradient(135deg, rgba(46, 128, 114, 0.8), rgba(114, 29, 29, 0.8)); /* Farbverlauf mit Transparenz */
         color: white;
         padding: 10px;
         font-size: 18px;
         max-width: 600px;
         margin: 30px auto;
         text-align: center;
-        border-radius: 50px;
-        /* Abgerundete Kanten */
+        border-radius: 50px; /* Abgerundete Kanten */
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        transform: skew(-5deg);
-        /* Schräger Effekt */
-        opacity: 0;
-        /* Unsichtbar */
-        transform: scale(0.9);
-        /* Leicht verkleinert für sanften Effekt */
+        transform: skew(-5deg); /* Schräger Effekt */
+        opacity: 0; /* Unsichtbar */
+        transform: scale(0.9); /* Leicht verkleinert für sanften Effekt */
         transition: opacity 0.5s ease, transform 0.5s ease;
         position: absolute;
-        top: 40px;
-        /* Verschiebt die Box nach unten */
+        top: 40px; /* Verschiebt die Box nach unten */
         left: 50%;
     }
 
@@ -69,7 +61,6 @@
         border-radius: 50%;
         width: 200px;
         max-width: 100%;
-        /* Bild skaliert in den verfügbaren Raum */
         height: auto;
     }
 
@@ -82,41 +73,31 @@
 
     .introduction {
         /* oberer Teil inkl. Bild */
-        position: absolute;
-        /* Position relativ zum nächsthöheren positionierten Element */
+        position: absolute; /* Position relativ zum nächsthöheren positionierten Element */
         top: 200px;
-        /* Vertikale Position */
         left: 50px;
-        /* Horizontale Position */
         gap: 20px;
         display: flex;
         align-items: center;
-        /* Zentriert die Elemente vertikal */
         flex-wrap: wrap;
     }
 
     .Über-mich {
         /* Name + Text */
-        flex: 1;
-        /* Macht die Elemente gleich groß */
+        flex: 1; /* Macht die Elemente gleich groß */
         text-align: center;
-        /* Zentriert den Text innerhalb der Box */
         font-family: Garamond, "Times New Roman", serif;
         font-size: 25px;
     }
 
     .CV {
         /* Lebenslauf: Inhalte */
-        margin-top: 500px;
-        /* Abstand zum Header*/
+        margin-top: 500px; /* Abstand zum Header*/
         margin-right: 80px;
         margin-left: 80px;
-        background-color: rgba(3, 3, 3, 0.8);
-        /* 80% Deckkraft (leicht transparent) */
-        border-radius: 50px;
-        /* Abgerundete Ecken */
-        padding: 80px;
-        /* Innenabstand für besseren Look */
+        background-color: rgba(3, 3, 3, 0.8); /* 80% Deckkraft (leicht transparent) */
+        border-radius: 50px; /* Abgerundete Ecken */
+        padding: 80px; /*Innenabstand für besseren Look */
     }
 
     table {
@@ -170,8 +151,7 @@
 
     /*Kontakt: */
     .Kontakt {
-        margin-top: 500px;
-        /* Abstand zum Header*/
+        margin-top: 500px; /* Abstand zum Header*/
         margin-right: 80px;
     }
 
@@ -191,29 +171,23 @@
 
     .footer-link {
         /* LinkedIn */
-        align-items: center;
-        /* Icon & Text vertikal ausrichten */
+        align-items: center; /* Icon & Text vertikal ausrichten */
         color: white;
         text-decoration: underline;
         font-size: 14px;
         font-weight: bold;
-        border-radius: 25px;
-        /* Sanft abgerundet */
+        border-radius: 25px; /* Sanft abgerundet */
         transition: background 0.3s ease, transform 0.2s ease;
     }
 
     .footer-link:hover {
-        color: #0077b5;
-        /* LinkedIn-Blau */
-        transform: translateY(-2px);
-        /* Leichtes Anheben */
+        color: #0077b5;/* LinkedIn-Blau */
+        transform: translateY(-2px); /* Leichtes Anheben */
     }
 
     .footer-link i {
-        margin-right: 8px;
-        /* Abstand zwischen Icon & Text */
-        font-size: 20px;
-        /* Größeres Icon */
+        margin-right: 8px;/* Abstand zwischen Icon & Text */
+        font-size: 20px; /* Größeres Icon */
     }
 
     .footer-links {

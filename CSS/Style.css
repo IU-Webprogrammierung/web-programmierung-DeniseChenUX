@@ -15,22 +15,20 @@ body {
   font-size: 18px;
 }
 
-  .mein-Name {
-    /*Startseite: h1: Hallo, mein Name ist*/
+  /*Startseite: h1: Hallo, mein Name ist*/
+  .mein-Name { 
     text-align: right;
   }
 
-  .Lebenslauf {
-    /*h1
-    border-bottom: 3px solid #ddd;
-    padding-bottom: 5px;
-    margin-right: 10%; */
+  /*Lebenslauf: h1*/
+  .Lebenslauf { 
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
     text-align: center;
   }
 
+   /*Lebenslauf: <p>-Inhalte rechte Spalte*/
   td p {
     margin: 4px 0; 
 }
