@@ -253,7 +253,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 1920px;
     background-color: rgba(3, 3, 3, 0.8);
     border-radius: 50%;
     margin: 0; /* Negative Margin für sanfte Überlappung */
@@ -270,9 +269,14 @@
   .card img {
     width: 200px;
     height: auto;
+    align-items: center;
+  }
+
+  figure {
     object-fit: contain;
     flex-shrink: 0;
-    margin-left: 100px;
+    margin: 100px 0 0 100px;
+    max-height: 400px;
   }
 
   /* Inhalt der Card */
