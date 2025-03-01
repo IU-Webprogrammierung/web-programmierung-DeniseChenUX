@@ -116,13 +116,14 @@
     /* große, runde Buttons*/
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
+    float: left;
   }
 
   .button {
-    width: 20vw;
-    height: 20vw;
+    width: 12vw;
+    height: 12vw;
     max-width: 200px;
     max-height: 200px;
     color: white;
@@ -243,13 +244,13 @@
   .card {
     /* article */
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 560px;
+    height: 560px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -265,23 +266,30 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
+  .card:active {
+    transform: scale(1.15); /* Vergrößert sich leicht */
+    z-index: 10; /* Hebt die Karte über die anderen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
   /* Bilder */
   .card img {
     width: 200px;
-    height: auto;
+    height: 380px;
     align-items: center;
   }
 
   figure {
     object-fit: contain;
     flex-shrink: 0;
-    margin: 100px 0 0 100px;
+    margin: 80px 0 0 85px;
     max-height: 400px;
   }
 
   /* Inhalt der Card */
   .card-content {
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,8 +308,8 @@
     text-decoration: none;
     border-radius: 50%;
     transition: background 0.3s ease;
-    width: 20vw;
-    height: 20vw;
+    width: 12vw;
+    height: 12vw;
     max-width: 200px;
     max-height: 200px;
     align-items: center;

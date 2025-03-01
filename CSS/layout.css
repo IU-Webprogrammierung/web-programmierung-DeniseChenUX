@@ -2,8 +2,7 @@
 
     /* Startseite: Abstand zum Header*/
     .Starter {
-        margin-top: 500px;
-        margin-bottom: 100px;
+        margin-top: 300px;
     }
 
     /* Startseite: */
@@ -167,13 +166,12 @@
     /* Footer */
     footer {
         font-size: 14px;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         width: 100%;
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
     }

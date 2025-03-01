@@ -1,2 +1,21 @@
 /*Media Queries*/
 
+/*1. Breakpoint f. extra große Bildschirme wie Desktops & große Montitore*/
+@media (min-width: 1200px) {
+
+}
+
+/*2. Breakpoint f. mittelgroße Bildschirme wie Tablets quer & kleine Laptops*/
+@media (max-width: 1024px) {
+
+}
+
+/*3. Breakpoint f. kleine Bildschirme wie Tablets hochkant & größere Handys*/
+@media (max-width: 768px) {
+
+}
+
+/*4. Breakpoint f. kleinste Bildschirme wie Smartphones hochkant*/
+@media (max-width: 480px) {
+
+}
