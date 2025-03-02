@@ -33,8 +33,13 @@
     align-items: center;
     position: fixed; /* Fixiert die Navigation am oberen Rand */
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    max-width: 100vw;
     z-index: 1000;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .nav-logo {
@@ -55,7 +60,10 @@
     border-radius: 50%;
     padding: 5px 5px;
     transition: padding 0.3s ease, font-weight 0.3s ease;
-    position: relative;  
+    position: relative;
+    flex-shrink: 1;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .nav:hover {
@@ -106,8 +114,7 @@
     transition: all 0.3s ease;
     background-color: #2E8072;
     position: relative;
-    z-index: 1000;
-    /* Stellt sicher, dass das Dropdown über anderen Elementen liegt */
+    z-index: 1000; /* Stellt sicher, dass das Dropdown über anderen Elementen liegt */
     pointer-events: auto;
   }
 
