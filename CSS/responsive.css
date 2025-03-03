@@ -19,6 +19,15 @@
     p {
         font-size: 17px;
     }
+    footer p {
+        font-size: 13px;
+    }
+
+    /* Startseite: */
+    .button-container {
+    /* große, runde Buttons*/
+        margin-top: 0;
+    }
 }
 
 /*3. Breakpoint f. kleine Bildschirme wie Tablets hochkant & größere Handys*/

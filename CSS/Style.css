@@ -1,6 +1,5 @@
 @import url("layout.css");
 @import url("components.css");
-@import url("responsive.css");
 
 /* Container für main's */
 main + header + footer {
