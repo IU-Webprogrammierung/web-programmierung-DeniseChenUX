@@ -1,8 +1,10 @@
 /*Media Queries*/
 
 /*1. Breakpoint f. extra große Bildschirme wie Desktops & große Montitore*/
-@media (min-width: 1200px) {
-
+@media (max-width: 1920px) {
+    .button {
+        font-size: clamp(24px, 2.5vw, 45px);
+    }
 }
 
 /*2. Breakpoint f. mittelgroße Bildschirme wie Tablets quer & kleine Laptops*/
@@ -22,11 +24,64 @@
     footer p {
         font-size: 13px;
     }
+    .email-button {
+        font-size: 13px;
+    }
+    .footer-links {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 150px;
+    }
 
     /* Startseite: */
     .button-container {
     /* große, runde Buttons*/
         margin-top: 0;
+    }
+    .button {
+        font-size: clamp(20px, 2.5vw, 35px);
+    }
+
+    /* Lebenslauf: */
+    .Über-mich p {
+        font-size: 24px;
+    }
+    .text-small {
+        width: 400px;
+    }
+    .CV {
+        margin-right: 60px;
+        margin-left: 60px;
+        padding: 40px
+    }
+    table {
+        width: 90%;
+        margin-left: 0;
+    }
+    th {
+        width: 20%;
+    }
+    td {
+        width: 80%;
+    }
+    .skill-name {
+        width: 310px;
+    }
+
+    /* Projekte: */
+    .project {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    /* Kontakt: */
+    .linkedin-button i {
+        font-size: 18px;
+    }
+    fieldset {
+        width: 90%;
     }
 }
 

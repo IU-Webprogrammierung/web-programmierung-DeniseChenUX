@@ -101,7 +101,7 @@
         margin-left: 80px;
         background-color: rgba(3, 3, 3, 0.8); /* 80% Deckkraft (leicht transparent) */
         border-radius: 50px; /* Abgerundete Ecken */
-        padding: 80px; /*Innenabstand für besseren Look */
+        padding: 80px; /*Innenabstand */
     }
 
     table {
