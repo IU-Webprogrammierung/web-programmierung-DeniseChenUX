@@ -31,6 +31,7 @@
         font-size: 13px;
     }
 
+    /* Header: Navigation/Menü */
     .logo {
         width: 150px;
     }
@@ -98,6 +99,91 @@
     }
     p {
         font-size: 16px;
+    }
+
+    /* Header: Navigation/Menü */
+    .logo {
+        width: 120px;
+    }
+    .nav {
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .language-switch {
+        top: 0;
+        right: 0;
+        padding: 0px 10px;
+    }
+    .language-switch label {
+        font-size: 12px;
+    }
+    .language-switch select {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    /* Startseite: */
+    .big {
+        max-width: 40vw;
+    }
+    .text-big {
+        max-width: 55vw;
+    }
+    .button-container {
+        /* große, runde Buttons*/
+            margin-top: -100px;
+        }
+    .button {
+        font-size: clamp(19px, 4vw, 28px);
+        width: 25vw;
+        height: 25vw;
+    }
+
+    /* Lebenslauf: */
+    .introduction {
+        top: 150px;
+    }
+    .CV {
+        margin-top: 400px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 20px
+    }
+    .skill-name {
+        width: 220px;
+    }
+    .skill-bar {
+        max-width: 250px;
+        min-width: 150px;
+    }
+    ul {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    /* Projekte: */
+    .card {
+        width: 430px;
+        height: 430px;
+    }
+    figure {
+        margin: 65px 0 0 65px;
+    }
+    .card img {
+        width: 150px;
+        height: 280px;
+    }
+    figcaption {
+        font-size: 12px;
+    }
+    .project {
+        width: 25vw;
+        height: 25vw;
+    }
+
+     /* Kontakt: */
+    fieldset {
+        width: 80%;
     }
 }
 
