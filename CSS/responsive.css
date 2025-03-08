@@ -189,8 +189,12 @@
 
 /*4. Breakpoint f. kleinste Bildschirme wie Smartphones hochkant*/
 @media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
     h1 {
         font-size: 32px;
+        margin: 15px;
     }
     h2 {
         font-size: 24px;
@@ -200,5 +204,105 @@
     }
     p {
         font-size: 15px;
+    }
+    footer p {
+        font-size: 11px;
+    }
+    .email-button {
+        font-size: 11px;
+    }
+    .footer-links {
+        font-size: 11px;
+    }
+    .footer-link {
+        font-size: 11px;
+    }
+
+    /* Header: Navigation/Menü */
+    .logo {
+        width: 100px;
+    }
+    .nav {
+        line-height: 10px;
+        font-size: 14px;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start; /* Links ausrichten */
+        justify-content: flex-start; 
+    }
+    .language-switch {
+        top: 10px;
+        right: 5px;
+        padding: 10px 10px;
+    }
+
+    /* Startseite: */
+    .text-big {
+        max-width: 54vw;
+    }
+    .button-container {
+    /* große, runde Buttons*/
+        margin-top: -150px;
+    }
+
+    /* Lebenslauf: */
+    .introduction {
+        top: 130px;
+        gap: 0;
+    }
+    .Über-mich p {
+        font-size: 18px;
+    }
+    .CV {
+        margin-top: 300px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 5px
+    }
+    .skill {
+        align-items:last baseline;
+    }
+    .skill-name {
+        width: 150px;
+    }
+    .skill-bar {
+        max-width: 200px;
+        min-width: 100px;
+    }
+
+    /* Projekte: */
+    .Projekte {
+        margin-top: 110px;
+    }
+    .card {
+        width: 350px;
+        height: 330px;
+    }
+    figure {
+        margin: 55px 0 0 45px;
+    }
+    .card img {
+        width: 100px;
+        height: 200px;
+    }
+    figcaption {
+        font-size: 10px;
+        max-width: 100px;
+    }
+    article p {
+        font-size: 12px;
+    }
+    .project {
+        width: 25vw;
+        height: 25vw;
+    }
+     /* Kontakt: */
+     .Kontakt {
+        margin-top: 300px; /* Abstand zum Header*/
+        margin-right: 80px;
+    }
+    fieldset {
+        width: 90%;
     }
 }
