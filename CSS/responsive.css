@@ -9,6 +9,13 @@
 
 /*2. Breakpoint f. mittelgroße Bildschirme wie Tablets quer & kleine Laptops*/
 @media (max-width: 1024px) {
+header + main + footer {
+    min-width: 90%;
+    max-width: 100vw; 
+    margin: 0 auto; /* Zentriert den Inhalt */
+    padding: 0 20px; /* Links/Rechts etwas Abstand */
+}
+
     h1 {
         font-size: 42px;
     }
@@ -176,6 +183,9 @@
         margin-left: 10%;
         width: 80%;
     }
+    th:focus-within, td:focus-within {
+        transform: scale(1.05);
+    }
 
     /* Projekte: */
     .card {
@@ -324,9 +334,9 @@
      /* Kontakt: */
      .Kontakt {
         margin-top: 300px; /* Abstand zum Header*/
-        margin-right: 80px;
     }
     fieldset {
         width: 90%;
+        max-width: 360px;
     }
 }

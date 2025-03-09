@@ -2,9 +2,8 @@
 @import url("components.css");
 
 /* Container für main's */
-main + header + footer {
-  width: 90%; 
-  min-width: 1200px;
+header + main + footer {
+  min-width: 90%;
   max-width: 100vw; 
   margin: 0 auto; /* Zentriert den Inhalt */
   padding: 0 20px; /* Links/Rechts etwas Abstand */

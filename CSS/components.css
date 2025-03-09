@@ -362,7 +362,7 @@
     /*section: komplettes Formular */
     font-size: 18px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -377,7 +377,7 @@
     width: 100%;
     align-items: stretch;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   fieldset {
@@ -389,6 +389,7 @@
     display: block;
     border: 1px solid #ccc;
     background-color: rgba(3, 3, 3, 0.8);
+    align-self: center;
   }
 
   .contact-form {
