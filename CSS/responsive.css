@@ -44,6 +44,14 @@
     .button {
         font-size: clamp(20px, 2.5vw, 35px);
     }
+    .about-me-box {
+        top: 70px; /* Verschiebt die Box nach unten */
+        right: 20%; 
+        left: 30%; 
+    }
+    .about-me-box p {
+        font-size: clamp(14px, 2vw, 18px);
+    }
 
     /* Lebenslauf: */
     .Über-mich p {
@@ -137,6 +145,14 @@
         font-size: clamp(19px, 4vw, 28px);
         width: 25vw;
         height: 25vw;
+    }
+    .about-me-box {
+        top: 450px; /* Verschiebt die Box nach unten */
+        right: 40%; 
+        left: 5%; 
+    }
+    .about-me-box p {
+        font-size: clamp(12px, 2vw, 17px);
     }
 
     /* Lebenslauf: */
@@ -245,6 +261,14 @@
     /* große, runde Buttons*/
         margin-top: -150px;
     }
+    .about-me-box {
+        top: 190px; /* Verschiebt die Box nach unten */
+        right: 0; 
+        left: 0; 
+    }
+    .about-me-box p {
+        font-size: clamp(10px, 2vw, 15px);
+    }
 
     /* Lebenslauf: */
     .introduction {
@@ -276,8 +300,8 @@
         margin-top: 110px;
     }
     .card {
-        width: 350px;
-        height: 330px;
+        width: 320px;
+        height: 320px;
     }
     figure {
         margin: 55px 0 0 45px;
