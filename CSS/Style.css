@@ -1,17 +1,19 @@
 @import url("layout.css");
 @import url("components.css");
 
-/* Container für main's */
+/* Container alle Inhalte */
 header + main + footer {
-  min-width: 90%;
-  max-width: 100vw; 
+  width: calc(100% - 40px); /* Zieht das Padding ab */
+  max-width: 100vw;
   margin: 0 auto; /* Zentriert den Inhalt */
   padding: 0 20px; /* Links/Rechts etwas Abstand */
 }
 
 html, body {
-  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  /*overflow-x: hidden;  Verhindert horizontales Scrollen */
   width: 100%; /* Stellt sicher, dass nichts breiter ist als der Viewport */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,6 +22,8 @@ body {
   background-color: #030303;
   background-repeat: no-repeat, repeat;
   background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 
   /* Schrift */
   color: white;

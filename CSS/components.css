@@ -94,6 +94,7 @@
     right: 20px;
     padding: 5px 10px;
     border-radius: 5px;
+    max-width: 100%;
   }
 
   .language-switch label {
@@ -244,7 +245,6 @@
     /* gesamte section */
     display: flex;
     flex-wrap: wrap;
-    gap: -40px; 
     justify-content: center;
     padding: 50px 20px;
     position: relative;
@@ -361,8 +361,8 @@
   .contact-form-container {
     /*section: komplettes Formular */
     font-size: 18px;
-    width: 100%;
-    max-width: 1000px;
+    width: 50%;
+    max-width: 100%;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -381,8 +381,8 @@
   }
 
   fieldset {
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 100%;
     padding: 40px;
     border-radius: 8px;
     margin: 0 auto 20px;

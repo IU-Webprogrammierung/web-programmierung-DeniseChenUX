@@ -1,7 +1,7 @@
 /*Struktur & Positionierung*/
 
     /* Startseite: Abstand zum Header*/
-    .Starter {
+    .Starter { /* main: */
         margin-top: 300px;
     }
 
@@ -153,7 +153,7 @@
         /*flex-direction: column;  Cards untereinander anordnen */
         justify-content: center;
         padding: 20px;
-        max-width: 1920px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
