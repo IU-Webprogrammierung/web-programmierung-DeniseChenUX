@@ -381,15 +381,13 @@
   }
 
   fieldset {
-    width: 80%;
-    max-width: 100%;
+    max-width: 90%;
     padding: 40px;
     border-radius: 8px;
-    margin: 0 auto 20px;
+    margin: 0;
     display: block;
     border: 1px solid #ccc;
     background-color: rgba(3, 3, 3, 0.8);
-    align-self: center;
   }
 
   .contact-form {

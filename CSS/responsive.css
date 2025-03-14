@@ -146,7 +146,7 @@ header + main + footer {
     }
     .button-container {
         /* große, runde Buttons*/
-            margin-top: -100px;
+            margin-top: -150px;
         }
     .button {
         font-size: clamp(19px, 4vw, 28px);
@@ -208,8 +208,16 @@ header + main + footer {
     }
 
      /* Kontakt: */
+     .introduction {
+        left: 0;
+        gap: 0;
+     }
+     .contact-form-container {
+        width: 90%;
+        margin:0;
+    }
     fieldset {
-        width: 80%;
+        width: 90vw;
     }
 }
 
@@ -271,6 +279,11 @@ header + main + footer {
     /* große, runde Buttons*/
         margin-top: -150px;
     }
+    .button {
+        font-size: clamp(19px, 5vw, 26px);
+        width: 30vw;
+        height: 30vw;
+    }
     .about-me-box {
         top: 190px; /* Verschiebt die Box nach unten */
         right: 0; 
@@ -289,7 +302,7 @@ header + main + footer {
         font-size: 18px;
     }
     .CV {
-        margin-top: 300px;
+        margin-top: 350px;
         margin-right: 5px;
         margin-left: 5px;
         padding: 5px
@@ -307,7 +320,10 @@ header + main + footer {
 
     /* Projekte: */
     .Projekte {
-        margin-top: 110px;
+        margin-top: 220px;
+    }
+    .projects {
+        padding: 0;
     }
     .card {
         width: 320px;
@@ -332,14 +348,18 @@ header + main + footer {
         height: 25vw;
     }
      /* Kontakt: */
+     .introduction {
+        max-width: 310px;
+        left: 20%;
+     }
      .Kontakt {
-        margin-top: 300px; /* Abstand zum Header*/
+        margin-top: 350px; /* Abstand zum Header*/
     }
     .contact-form-container {
         width: 360px;
         max-width: 90%;
         padding: 0;
-        margin:0;
+        margin: 5%;
     }
     fieldset {
         width: 360px;
