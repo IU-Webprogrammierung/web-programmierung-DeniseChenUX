@@ -9,11 +9,10 @@ header + main + footer {
   padding: 0 20px; /* Links/Rechts etwas Abstand */
 }
 
-html, body {
+body {
   /*overflow-x: hidden;  Verhindert horizontales Scrollen */
-  width: 100%; /* Stellt sicher, dass nichts breiter ist als der Viewport */
+  width: calc(100% - 16px); 
   max-width: 100%;
-  box-sizing: border-box;
 }
 
 body {
