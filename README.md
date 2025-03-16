@@ -21,5 +21,12 @@ Das Ziel ist es, **HTML, CSS und Git für die Versionskontrolle zu nutzen**.
 ✔ Vorgaben für Barrierefreiheit beachten
 ✔  optional: CSS
 
+## 2. Erarbeitungsphase  
+✔ CSS-Code schreiben 
+✔ Flexbox/ Grid verwenden
+✔ Media Queries/ Breakpoints
+✔ verfeinertes Konzept
+
 ---
+
 Studentin: Denise Chen
