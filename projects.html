@@ -10,32 +10,11 @@
     <link rel="icon" type="image/x-icon" href="files/Favicon.png">
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Hauptnavigation">
-            <ul class="navigation">
-                <li class="nav-logo">
-                    <a href="index.html" aria-label="Gehe zur Startseite">
-                        <img class="logo" src="files/Logo.svg" alt="">
-                        <span class="sr-only">Gehe zur Startseite</span>
-                    </a>
-                </li>
-                <li class="nav"><a href="cv.html">Lebenslauf</a></li>
-                <li class="nav"><a href="projects.html">Projekte</a></li>
-                <li class="nav"><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-        <!-- Sprachumschalter, Funktion muss noch implementiert werden -->
-        <div class="language-switch">
-            <label for="language-select" id="language-label">Sprache wählen: </label>
-            <select id="language-select" aria-labelledby="language-label">
-                <option value="de">Deutsch</option>
-                <option value="en">English</option>
-            </select>
-        </div>
-    </header>
+    <header></header>
 
     <main class="Projekte">
         <h1>Meine Projekte</h1>
@@ -112,22 +91,12 @@
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Denise Chen</p>
-        <a href="mailto:chendenise1996@yahoo.de" class="email-button">E-mail senden</a>
-        <p>Besuchen Sie mich gern auf
-            <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="footer-link" target="_blank"
-                aria-label="Mein LinkedIn-Profil">LinkedIn
-            </a>!
-        </p>
-        <nav aria-label="Rechtliche Links">
-            <ul class="footer-links">
-                <li><a href="#">Impressum</a></li>
-                <li><a href="#">Datenschutz</a></li>
-                <li><a href="#">Cookies</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <footer></footer>
 </body>
+
+<script>
+    $( "header" ).load( "components/header.html" );
+    $( "footer" ).load( "components/footer.html" );
+</script>
 
 </html>
