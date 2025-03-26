@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Denise Chen">
+  <meta name="keywords" content="Denise Chen, resume, portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denise Chen</title>
+  <link rel="icon" type="image/x-icon" href="files/Favicon.png">
+  <link rel="stylesheet" href="CSS/Style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header></header>
+
+  <main class="Kontakt">
+    <div class="introduction">
+      <div class="Über-mich">
+        <img class="small" src="files/DC2.jpg" alt="Portrait of Denise Chen">
+      </div>
+      <div class="Über-mich">
+        <img class="text-small" src="files/Name_white.svg" alt="Denise Chen-lettering">
+        <p>chendenise1996@yahoo.de</p>
+        <a href="mailto:chendenise1996@yahoo.de" class="email-button" aria-label=" send e-Mail to Denise Chen ">
+          send e-mail
+        </a>
+        <a href="https://www.linkedin.com/in/denise-chen-39a5a71a1/" class="linkedin-button" target="_blank"
+          aria-label="My LinkedIn-Profile">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <h1>Contact</h1>
+    <div class="curved-line"></div>
+    <section class="contact-form-container">
+      <div class="form-wrapper">
+        <h2>Please feel free to contact me</h2>
+        <form action="#" method="POST" class="contact-form" aria-labelledby="contact-heading">
+          <fieldset>
+            <legend>Write me a message</legend>
+            <label>
+              Name:
+              <input type="text" name="name" placeholder="Your Name" required aria-label="Name">
+            </label>
+            <label>
+              E-Mail:
+              <input type="email" name="email" placeholder="Your mail address" required aria-label="E-Mail">
+            </label>
+            <label>
+              Message:
+              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            </label>
+            <button type="submit" class="submit-btn">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script>
+  $( "header" ).load( "components/header-en.html" );
+  $( "footer" ).load( "components/footer-en.html" );
+</script>
+
+</html>
