@@ -87,37 +87,40 @@
 
   /* Header: Sprach-Schalter */
   .language-switch {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    z-index: 1000;
+    display: flex;
     position: fixed;
     top: 10px;
     right: 20px;
+    background: #2E8072;
     padding: 5px 10px;
     border-radius: 5px;
-    max-width: 100%;
-  }
+    z-index: 1000;
+}
 
-  .language-switch label {
-    /*Sprache wählen*/
-    font-size: 16px;
-    color: white;
-  }
+.language-switch a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  position: relative;
+}
 
-  .language-switch select {
-    /* Styling des Dropdown-Menüs */
-    font-size: 14px;
-    padding: 5px 10px;
-    border: 1px solid #2E8072;
-    border-radius: 5px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: #2E8072;
-    position: relative;
-    z-index: 1000; /* Stellt sicher, dass das Dropdown über anderen Elementen liegt */
-    pointer-events: auto;
-  }
+.language-switch a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.language-switch a:hover::after {
+  transform: scaleX(1);
+}
 
   /* Startseite: */
   .button-container {

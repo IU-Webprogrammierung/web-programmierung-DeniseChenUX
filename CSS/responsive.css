@@ -43,6 +43,11 @@ header + main + footer {
         width: 150px;
     }
 
+    .language-switch a {
+        font-size: 0.95rem;
+        padding: 7px 11px;
+    }
+
     /* Startseite: */
     .button-container {
     /* große, runde Buttons*/
@@ -125,16 +130,13 @@ header + main + footer {
         font-size: 16px;
     }
     .language-switch {
+        padding: 4px 8px;
         top: 0;
         right: 0;
-        padding: 0px 10px;
     }
-    .language-switch label {
-        font-size: 12px;
-    }
-    .language-switch select {
-        font-size: 12px;
-        padding: 2px 5px;
+    .language-switch a {
+        font-size: 0.8rem;
+        padding: 4px 8px;
     }
 
     /* Startseite: */
@@ -263,9 +265,13 @@ header + main + footer {
         justify-content: flex-start; 
     }
     .language-switch {
+        padding: 4px 8px;
         top: 10px;
-        right: 5px;
-        padding: 10px 10px;
+        right: 20px;
+    }
+    .language-switch a {
+        font-size: 0.85rem;
+        padding: 5px 9px;
     }
 
     /* Startseite: */
