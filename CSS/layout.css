@@ -215,18 +215,17 @@ footer {
 .footer-links {
     /* Impressum usw. */
     list-style: none;
-    color: white;
-    text-decoration: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 50px;
     margin: 0 auto;
     align-items: center;
-    text-align: center;
     padding: 0;
     width: auto;
 
     a {
+        color: white;
+        text-decoration: none;
         transition: color 0.3s ease, transform 0.2s ease;
 
         &:hover {
