@@ -1,7 +1,16 @@
+/*Typografie & Generelles*/
+
 @import url("layout.css");
 @import url("components.css");
 
-/*Typografie & Generelles*/
+/* Variablen für Farben & Schriftarten */
+:root {
+  --main-color: #721D1D; 
+  --secondary-color: #2E8072;
+  --text-color: white;
+  --font-primary: "Trebuchet MS", Helvetica, sans-serif;
+  --font-secondary: Garamond, "Times New Roman", serif;
+}
 
 /* Container alle Inhalte */
 header + main + footer {
@@ -25,14 +34,14 @@ body {
   background-attachment: fixed;
 
   /* Schrift */
-  color: white;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-primary);
   font-size: 18px;
 }
 
 /* Typografie */
 h1, h2, h3 {
-  font-family: Garamond, "Times New Roman", serif;
+  font-family: var(--font-secondary);
 }
   h1 {
     text-align: center;
@@ -47,7 +56,7 @@ h1, h2, h3 {
   h3 {
     text-align: left;
     font-size: 28px;
-    color: white;
+    color: var(--text-color);
   }
 
 /*Startseite: h1: Hallo, mein Name ist*/
@@ -58,7 +67,7 @@ h1, h2, h3 {
 /*Lebenslauf: h1*/
 .Lebenslauf {
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
   text-align: center;
 }

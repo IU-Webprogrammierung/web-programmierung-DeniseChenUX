@@ -101,7 +101,7 @@
     /* Name + Text */
     flex: 1; /* Macht die Elemente gleich groß */
     text-align: center;
-    font-family: Garamond, "Times New Roman", serif;
+    font-family: var(--font-secondary);
     font-size: 25px;
 }
 
@@ -117,7 +117,7 @@
 
 table {
     /* Lebenslauf: Berufserfahrung + Bildung */
-    color: white;
+    color: var(--text-color);
     width: 80%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -135,7 +135,7 @@ table {
     td {
         text-align: right;
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--text-color);
     }
     
     th {
@@ -194,7 +194,7 @@ footer {
     /* LinkedIn */
     display: inline-block;
     align-items: center; 
-    color: white;
+    color: var(--text-color);
     text-decoration: underline;
     font-size: 14px;
     font-weight: bold;
@@ -224,12 +224,12 @@ footer {
     width: auto;
 
     a {
-        color: white;
+        color: var(--text-color);
         text-decoration: none;
         transition: color 0.3s ease, transform 0.2s ease;
 
         &:hover {
-            color: #2E8072;
+            color: var(--secondary-color);
             transform: translateY(-2px);
         }
     }
@@ -237,18 +237,18 @@ footer {
 
 .email-button {
     display: inline-block;
-    background-color: #2E8072;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
     transition: transform 0.1s ease, background-color 0.3s;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: var(--font-primary);
 
     &:hover {
-        background-color: #721D1D;
+        background-color: var(--main-color);
         transform: scale(1.05);
     }
 }
