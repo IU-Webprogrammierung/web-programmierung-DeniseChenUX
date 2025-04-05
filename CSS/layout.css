@@ -20,7 +20,8 @@
     margin: 10px;
     transition: transform 0.5s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: translateY(-5px);
     }
 }
@@ -33,7 +34,8 @@
     float: right;
     transform: scale(0.9);
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1);
     }
 }
@@ -42,7 +44,7 @@
     /* Über mich Box */
     background: rgba(46, 128, 114, 0.8);/* Dunkelgrün mit 80% Deckkraft */
     background: linear-gradient(135deg, rgba(46, 128, 114, 0.8), rgba(114, 29, 29, 0.8));/* Farbverlauf mit Transparenz */
-    color: white;
+    color: var(--text-color);
     padding: 10px;
     font-size: 18px;
     max-width: 600px;
@@ -201,7 +203,8 @@ footer {
     border-radius: 25px;
     transition: color 0.3s ease, transform 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: #0077b5; /* LinkedIn-Blau */
         transform: translateY(-2px);
     }
@@ -228,7 +231,8 @@ footer {
         text-decoration: none;
         transition: color 0.3s ease, transform 0.2s ease;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: var(--secondary-color);
             transform: translateY(-2px);
         }
@@ -247,7 +251,8 @@ footer {
     transition: transform 0.1s ease, background-color 0.3s;
     font-family: var(--font-primary);
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: var(--main-color);
         transform: scale(1.05);
     }
