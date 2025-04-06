@@ -163,6 +163,11 @@
     }
 
     /* Startseite: */
+    .mein-Name {
+        width: 50%;
+        font-size: clamp(28px, 5vw, 38px);
+    }
+
     .big {
         max-width: 35vw;
     }
@@ -331,6 +336,11 @@
     }
 
     /* Startseite: */
+    .mein-Name {
+        font-size: clamp(22px, 5vw, 32px);
+        margin: 0;
+    }
+
     .text-big {
         max-width: 54vw;
     }
