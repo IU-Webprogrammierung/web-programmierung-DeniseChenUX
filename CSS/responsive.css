@@ -80,6 +80,10 @@
         font-size: 24px;
     }
 
+    .flip-back-small p {
+        font-size: clamp(14px, 5vw, 20px);
+    }
+
     .text-small {
         width: 400px;
     }
@@ -260,7 +264,6 @@
 
     /* Kontakt: */
     .introduction {
-        left: 0;
         gap: 0;
     }
 
