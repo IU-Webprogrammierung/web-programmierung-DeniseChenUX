@@ -65,6 +65,7 @@ h1, h2, h3 {
   display: inline-block;
   width: 60%;
   cursor: default;
+  white-space: nowrap; /* verhindert Zeilenumbruch */
 
   span {
     display: inline-block;
