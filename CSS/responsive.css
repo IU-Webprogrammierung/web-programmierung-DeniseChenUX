@@ -10,6 +10,7 @@
         right: 20%;
         left: 30%;
     }
+    /*Desktop-First-Ansatz*/
 }
 
 /*2. Breakpoint f. mittelgroße Bildschirme wie Tablets quer & kleine Laptops*/
@@ -181,10 +182,8 @@
     }
 
     .button-container {
-        /* große, runde Buttons*/
         margin-top: -150px;
     }
-
     .button {
         font-size: clamp(19px, 4vw, 28px);
         width: 25vw;

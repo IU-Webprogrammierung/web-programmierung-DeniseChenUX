@@ -130,7 +130,6 @@
   float: left;
   margin-top: 200px;
 }
-
 .button {
   width: 12vw;
   height: 12vw;
@@ -212,7 +211,7 @@
   /* Lebenslauf: Button zum runterladen */
   display: inline-block;
   background-color: var(--main-color);
-  color: white;
+  color: var(--text-color);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;

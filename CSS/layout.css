@@ -39,6 +39,37 @@
         transform: scale(1);
     }
 }
+ /* Glanzeffekt auf text-big */
+.glow-wrapper {
+    position: relative;
+    float: right;
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(135deg, var(--secondary-color), var(--main-color), var(--secondary-color));
+      background-size: 300% 300%;
+      border-radius: 40px;
+      z-index: -1;
+      filter: blur(40px);
+      animation: borderGlow 6s ease infinite;
+    }
+  
+    &:hover {
+      transform: scale(1);
+    }
+  }
+@keyframes borderGlow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
 .about-me-box {
     /* Über mich Box */
@@ -60,9 +91,8 @@
     top: 40px;/* Verschiebt die Box nach unten */
     left: 50%;
 }
-
 /* Box wird sichtbar, wenn Maus über hover-trigger ist */
-.text-big:hover+.about-me-box {
+.glow-wrapper:hover+.about-me-box {
     opacity: 1;
     transform: scale(1);
 }
@@ -82,14 +112,15 @@
 }
 /* Flip-Effekt für rundes kleines Bild */
 .flip-wrapper-small {
+    /* div */
     width: 200px;
     height: 200px;
     position: relative;
     border-radius: 50%;
     perspective: 1000px;
   }
-  
   .flip-inner-small {
+    /* label */
     width: 100%;
     height: 100%;
     display: block;
@@ -99,11 +130,9 @@
     cursor: pointer;
     position: relative;
   }
-  
   #flip-toggle-small:checked + .flip-inner-small {
     transform: rotateY(180deg);
   }
-  
   .flip-face-small {
     position: absolute;
     width: 100%;
@@ -112,7 +141,6 @@
     border-radius: 50%;
     overflow: hidden;
   }
-  
   .flip-front-small img {
     width: 100%;
     height: 100%;
@@ -120,11 +148,9 @@
     border-radius: 50%;
     transition: transform 0.4s ease-in-out;
   }
-  
   .flip-wrapper-small:hover img {
     transform: rotate(5deg);
   }
-  
   .flip-back-small {
     background-color: var(--secondary-color, #2E8072);
     color: white;
